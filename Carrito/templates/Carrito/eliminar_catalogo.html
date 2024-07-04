@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Eliminar Catálogo{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/eliminar_catalogo.css' %}">
+<h1 class="titulo">NUEVA COLECCIÓN 2024</h1>
+
+<p>¿Estás seguro de que deseas eliminar el producto?</p>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <button type="submit" class="btn-danger">Eliminar</button>
+</form>
+{% include "Carrito/detalle_catalogo.html" %}
+{% endblock %}

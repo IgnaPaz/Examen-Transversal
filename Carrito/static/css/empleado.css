@@ -1,0 +1,224 @@
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    background: #070707;
+    background: -webkit-linear-gradient(to right, #1c6d5f, #214855, #137da7);
+    background: linear-gradient(to right, #1c6d5f, #214855, #137da7);
+    margin: 0;
+}
+
+.header {
+    background-color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    padding: 5px 10%;
+    font-family: 'Oswald';
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+
+
+.header .logo img {
+    height: 80px;
+    width: 125px;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.3);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: white;
+}
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-container a:hover {
+    color: white;
+}
+
+.contenedor-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: linear-gradient(to right, #1c6d5f, #214855, #137da7); /* Degradado lineal a la derecha */
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+
+.contenedor-item img {
+    height: 500px;
+    width: auto;
+    justify-content: end;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+.titulo {
+    font-family: "Times New Roman", Times, serif; /* Cambio de fuente */
+    font-weight: bold; /* Texto en negrita */
+    font-style: italic; /* Cambia la forma de la letra a cursiva */
+    font-size: 50px; /* Tamaño de fuente aumentado */
+    color: white;
+    margin-top: 30px;
+}
+
+.subtitulo {
+    font-family: "Times New Roman", Times, serif; /* Cambio de fuente */
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bg-custom.text-white.py-4 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.subtitulo {
+    background-color: #000000; /* Ejemplo de código de color */
+    height: 85px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+
+.contenedor-item p {
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+
+
+@media (max-width: 480px) {
+    .contenedor-item img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        align-items: left;
+        display: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-item img {
+        display: none;
+
+    }
+}
+
+.contac {
+    display: contents;
+    justify-content: left;
+    align-items: start;
+    cursor: default;
+}
+.titulo {
+    color: white;
+    margin-top: 30px;
+}
+.subtitulo{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+nav a:hover{
+    background-color: rgb(219, 245, 73);
+    font-style: italic;
+    color: #d7e932;
+  
+  }
+
+
+
+/* ------------------- */
+
+
+  
+ /* Estilo para el encabezado de la tabla */
+.table thead th {
+    background-color: #050505; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    font-weight: bold;
+    text-align: center; /* Alineación centrada del texto */
+  }
+  
+  /* Estilo para las celdas del cuerpo de la tabla */
+.table tbody td {
+    background-color: #214855; /* Color de fondo de las celdas */
+    color: #ffffff; /* Color del texto */
+    text-align: left; /* Alineación del texto */
+  }
+  
+  /* Estilo para las filas alternas del cuerpo de la tabla */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f7f1f1; /* Color de fondo de las filas alternas */
+  }
+  

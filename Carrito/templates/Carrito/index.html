@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inicio - I & E{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<h1 id="Titulo">NUEVA COLECCIÓN PRIMAVERA VERANO 2024</h1>
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active d-item">
+            <img src="{% static 'img/carrusel/novia.1.jpg' %}" class="d-block w-100 h-95 d-img" alt="Vestido de Novia">
+            <div class="carousel-caption mt-4">
+                <h2 class="display-1 fw-bolder text-uppercase">Temporada 2024</h2>
+                <p class="mt-5 fs-3 text-uppercase">Nueva Colección de Pnina Tornai</p>
+            </div>
+        </div>
+        <div class="carousel-item d-item">
+            <img src="{% static 'img/carrusel/novio.1.jpg' %}" class="d-block w-100 h-95 d-img" alt="Novio">
+            <div class="carousel-caption mt-4">
+                <h2 class="display-1 fw-bolder text-uppercase">Temporada 2024</h2>
+                <p class="mt-5 fs-3 text-uppercase">Colección de Thomas J. Fiedler</p>
+            </div>
+        </div>
+        <div class="carousel-item d-item">
+            <img src="{% static 'img/carrusel/pareja.1.png' %}" class="d-block w-100 h-95 d-img" alt="Pareja de Novios">
+            <div class="carousel-caption mt-4">
+                <h2 class="display-1 fw-bolder text-uppercase">La boda del siglo</h2>
+                <p class="mt-5 fs-3 text-uppercase">Diseñadora Elizabeth Emanuel</p>
+            </div>
+        </div>
+        <div class="carousel-item d-item">
+            <img src="{% static 'img/carrusel/novia.2.jpg' %}" class="d-block w-100 h-95 d-img" alt="Vestido de Novia">
+            <div class="carousel-caption mt-4">
+                <h2 class="display-1 fw-bolder text-uppercase">Temporada 2024</h2>
+                <p class="mt-5 fs-3 text-uppercase">Colección de Randy Fenoli</p>
+            </div>
+        </div>
+        <div class="carousel-item d-item">
+            <img src="{% static 'img/carrusel/novio.2.jpg' %}" class="d-block w-100 h-95 d-img" alt="Novio">
+            <div class="carousel-caption mt-4">
+                <h2 class="display-1 fw-bolder text-uppercase">Temporada 2024</h2>
+                <p class="mt-5 fs-3 text-uppercase">Nueva Colección de Thomas J. Fiedler</p>
+            </div>
+        </div>
+        <div class="carousel-item d-item">
+            <img src="{% static 'img/carrusel/pareja.2.jpg' %}" class="d-block w-100 h-95 d-img" alt="Pareja de Novios">
+            <div class="carousel-caption mt-4">
+                <h2 class="display-1 fw-bolder text-uppercase">La boda más esperada del año</h2>
+                <p class="mt-5 fs-3 text-uppercase">Diseñador Thomas J. Fiedler</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Nuevos Diseños -->
+<div id="Nuevos_Diseños" class="portfolio">
+    <div class="container">
+        <div class="row text-center justify-content-center">
+            <div class="col-lg-10 col-lg-offset-1 text-lg-center text">
+                <h1>Nuevos Diseños</h1>
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="vestido-item"> 
+                            <a href="#" class="d-block mb-4 h-100"> 
+                                <img class="img-fluid img-thumbnail" src="{% static 'img/portada/novia.p.jpg' %}" alt="Nueva coleccion"> 
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="smoking-item"> 
+                            <a href="#" class="d-block mb-4 h-100"> 
+                                <img class="img-fluid img-thumbnail" src="{% static 'img/portada/novio.p.jpg' %}" alt="Nueva coleccion"> 
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="vestido-item"> 
+                            <a href="#" class="d-block mb-4 h-100"> 
+                                <img class="img-fluid img-thumbnail" src="{% static 'img/portada/novia.pp.jpg' %}" alt="Nueva coleccion"> 
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="smoking-item"> 
+                            <a href="#" class="d-block mb-4 h-100"> 
+                                <img class="img-fluid img-thumbnail" src="{% static 'img/portada/novio.pp.jpg' %}" alt="Nueva coleccion"> 
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

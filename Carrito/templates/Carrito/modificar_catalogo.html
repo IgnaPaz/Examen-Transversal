@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Modificar Catálogo{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/modificar_catalogo.css' %}">
+<h1 class="titulo">NUEVA COLECCIÓN 2024</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Guardar</button>
+</form>
+
+<img src="{{productos.imagen.url}}" alt="producto">
+
+{% endblock %}

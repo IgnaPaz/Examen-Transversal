@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Crear Catálogo{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/crear_catalogo.css' %}">
+<h1 class="titulo">NUEVA COLECCIÓN 2024</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% comment %} <form action="#" method="post"> {% endcomment %}
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Enviar</button>
+    </form>
+
+{% endblock %}

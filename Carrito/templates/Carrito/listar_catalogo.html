@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Lista Catálogo{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/listar_catalogo.css' %}">
+<div class="container mt-5">
+    <h1>Catálogo de Productos</h1>
+    <div class="row">
+        {% for catalogo in catalogos %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ catalogo.imagen.url }}" class="card-img-top" alt="{{ catalogo.nombre }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ catalogo.nombre }}</h5>
+                    <p class="card-text">${{ catalogo.precio }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,183 @@
+.d-item {
+    height: 500px;
+}
+
+.d-img {
+    height:auto;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    background: #070707;
+    background: -webkit-linear-gradient(to right, #1c6d5f, #214855, #137da7);
+    background: linear-gradient(to right, #1c6d5f, #214855, #137da7);
+    margin: 0;
+}
+
+.header {
+    background-color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    padding: 5px 10%;
+    font-family: 'Oswald';
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+.header .logo img {
+    height: 80px;
+    width: 125px;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.3);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: #ffffff;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-container a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-container a:hover {
+    color: white;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+
+.contenedor-item p {
+    color: black
+}
+
+.contenedor-item {
+    display: flex;
+    background-color: #f1ece7b2;
+    font-size: medium;
+}
+
+/* .contenedor-item img {
+    height: 250px;
+    width: auto;
+    justify-content: end;
+} */
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+.img-thumbnail {
+    width: 500px; 
+    height: 350px; 
+    object-fit: cover; 
+}
+
+#Nuevos_Diseños {
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 30px; 
+    color: white; 
+    text-align: center; 
+    font-weight: bold; 
+}
+
+.header {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+
+
+
+/* @media (max-width: 480px) {
+    .contenedor-item img {
+        display: none;
+    }
+} */
+
+@media (max-width: 480px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        align-items: left;
+        display: wrap;
+    }
+}
+
+/* @media (max-width: 480px) {
+    .contenedor-item img {
+        display: none;
+    }
+} */
+
+.contac {
+    display: contents;
+    justify-content: left;
+    align-items: start;
+    cursor: default;
+}
+
+nav a:hover{
+    background-color: rgb(219, 245, 73);
+    font-style: italic;
+    color: #d7e932;
+  
+  }
+
+.logo-redes-sociales {
+    width: 30px; /* Ajusta el tamaño según tus necesidades */
+    height: 30px; /* Ajusta el tamaño según tus necesidades */
+    object-fit: contain; /* Esto asegurará que las imágenes se escalen correctamente */
+}
+

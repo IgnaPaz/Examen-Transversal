@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0c0c0c;
+  background: -webkit-linear-gradient(to bottom, #4b7e34, #203A43, #0F2027);
+  background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+  margin: 0; /* Change to 0 to remove the margin */
+  min-height: 100vh; /* Ensure body takes full height of viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; /* Make the container take up remaining space */
+}
+
+form {
+  width: 400px;
+  margin: 43px auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+h1 {
+  text-align: center;
+  color: #2C5364;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 162px;
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: relative; /* Change from fixed to relative */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, .1);
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body, h1, label, input, .registrar p, .foot p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+button.btn {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
