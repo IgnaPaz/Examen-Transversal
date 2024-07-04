@@ -1,2 +1,2 @@
 # Examen-Transversal
-Integrantes: 
+Integrantes: Ignacia Arancibia - Eric Flores
